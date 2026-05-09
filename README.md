@@ -34,13 +34,13 @@ After cleaning: **39,759 high‑quality rows** (20.5% noise removed).
 
 | Step                     | Action                                                                 |
 |--------------------------|------------------------------------------------------------------------|
-| **Column renaming**      | German → English, snake_case (`yearOfRegistration` → `registration_year`) |
-| **Type casting**         | Prices, odometer → integers; dates → datetime                           |
+| **Column renaming**      | German -> English, snake_case (`yearOfRegistration` -> `registration_year`) |
+| **Type casting**         | Prices, odometer -> integers; dates -> datetime                           |
 | **Drop irrelevant**      | `num_pictures`, scraping metadata, `name`, `model`, `offer_type`       |
-| **Handle missing**       | Categorical fields → `"unknown"` (preserve rows)                       |
+| **Handle missing**       | Categorical fields -> `"unknown"` (preserve rows)                       |
 | **Outlier capping**      | Price 500–250k, year 1950–2016, odometer 0–500k, power 1–1000 PS       |
 
-**Result:** Price skewness drops from 184.91 → 5.73. The distribution becomes realistic and benchmark‑ready.
+**Result:** Price skewness drops from 184.91 -> 5.73. The distribution becomes realistic and benchmark‑ready.
 
 ---
 
@@ -55,8 +55,8 @@ After cleaning: **39,759 high‑quality rows** (20.5% noise removed).
 ### 2. Price vs. Mileage
 
 - Pearson correlation: **−0.433** (moderate, not dominant).
-- R² = 0.187 → mileage alone explains **~19%** of price variance.  
-  → Brand and age explain the remaining 81%.
+- R² = 0.187 -> mileage alone explains **~19%** of price variance.  
+  -> Brand and age explain the remaining 81%.
 
 ### 3. Price vs. Brand (median price, ≥50 listings)
 
@@ -90,7 +90,7 @@ Compare median price at **age 10** vs. **age 3**.
 
 ### B. Annual Depreciation Rate (Log‑Linear Regression)
 
-`log(price) ~ age` → slope = annual % loss (filtered: ≥10 age points, R² ≥ 0.30).
+`log(price) ~ age` -> slope = annual % loss (filtered: ≥10 age points, R² ≥ 0.30).
 
 - **Green (<5%/yr):** Daihatsu (4.57%) – safest for extended inventory.
 - **Yellow (5–10%/yr):** Honda (6.42%), Suzuki (6.96%), Mazda (8.05%).
@@ -128,8 +128,7 @@ The tool warns when sample size is small (<5 records) or when a fallback is used
 
 We packaged the pricing logic and key charts into an interactive web app.
 
-**Live demo:** [https://your-app-url.streamlit.app/](https://your-app-url.streamlit.app/)  
-*(Replace with your actual deployed URL)*
+**Live demo:** [https://your-app-url.streamlit.app/]([https://your-app-url.streamlit.app/](https://ebay-market-intelligence-1.streamlit.app/))  
 
 ### Dashboard features
 
