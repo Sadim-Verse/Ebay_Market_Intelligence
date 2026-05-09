@@ -5,9 +5,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ebay-market-intelligence-1.streamlit.app/)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-Open the streamlit app: https://ebay-market-intelligence-1.streamlit.app/ 
+<!-- Open the streamlit app: https://ebay-market-intelligence-1.streamlit.app/ -->
 ---
 
 ## 📋 Project Overview
